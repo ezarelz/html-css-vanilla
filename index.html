@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Portfolio - challenge-1-WPH-048-EZAR</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/css_variables.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <!-- Logo dan menu toggle -->
+        <h1 class="logo">Tech.</h1>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <!-- Nav center (desktop) -->
+        <nav class="nav desktop-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact button (desktop) -->
+        <div class="desktop-btn">
+          <a href="#contact" class="btn-contact">Contact Us</a>
+        </div>
+
+        <!-- Nav dropdown (mobile only) -->
+        <div class="nav-wrapper-mobile">
+          <nav class="nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Service</a></li>
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+          </nav>
+          <a href="#contact" class="btn-contact">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>Build with the <span>Future.</span></h2>
+          <p>
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+          <a href="#contact" class="btn-primary">Let's Talk</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./assets/images/hero-hand.png"
+            alt="Phone mockup with Tech."
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h3 class="section-title">Who We Are</h3>
+
+        <div class="section-subtitle">
+          <span class="subtitle-line">
+            We're a group of tech students
+            <span class="semibold">trained in</span>
+            <span class="bold">building real-world digital products.</span>
+          </span>
+          <span class="subtitle-line">
+            From <span class="semibold">coding to design</span>, we
+            <span class="bold">
+              craft modern solutions for modern problems.</span
+            >
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-subtitle">
+        We offer simple tech solutions to help your ideas grow.
+      </p>
+
+      <div class="services-grid">
+        <!-- Web Development -->
+        <div class="service-card web">
+          <div class="icon-group">
+            <img
+              src="./assets/images/vectors/web_development_vector.png"
+              alt="icon-top"
+              class="icon-top"
+            />
+            <img
+              src="./assets/images/vectors/web_development_vector-2.png"
+              alt="icon-bottom"
+              class="icon-bottom"
+            />
+          </div>
+          <h4>Web Development</h4>
+          <p>Modern websites using HTML, CSS, JavaScript, and frameworks.</p>
+        </div>
+
+        <!-- App Development -->
+        <div class="service-card">
+          <img
+            src="./assets/images/vectors/app_development.png"
+            alt="App Icon"
+            class="icon-single"
+          />
+          <h4>App Development</h4>
+          <p>Mobile and desktop apps tailored for your needs</p>
+        </div>
+
+        <!-- AI Integration -->
+        <div class="service-card">
+          <img
+            src="./assets/images/vectors/ai_integration.png"
+            alt="AI Icon"
+            class="icon-single"
+          />
+          <h4>AI Integration</h4>
+          <p>Smart solutions using AI-powered tools and automation.</p>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="service-card">
+          <img
+            src="./assets/images/vectors/uiux_design.png"
+            alt="UI/UX Icon"
+            class="icon-single"
+          />
+          <h4>UI/UX Design</h4>
+          <p>Clean and functional designs for better user experience.</p>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="service-card">
+          <img
+            src="./assets/images/vectors/landing_page_design_icon.png"
+            alt="Landing Page Icon"
+            class="icon-single"
+          />
+          <h4>Landing Page Design</h4>
+          <p>High-converting landing pages for your product or business.</p>
+        </div>
+
+        <!-- CMS Integration -->
+        <div class="service-card">
+          <img
+            src="./assets/images/vectors/cms_integration_icon.png"
+            alt="CMS Icon"
+            class="icon-single"
+          />
+          <h4>CMS Integration</h4>
+          <p>Easy-to-manage websites with WordPress or Webflow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="work" class="work-section">
+      <div class="container">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle">
+          See what we've built with passion and purpose
+        </p>
+        <div class="work-gallery">
+          <div class="work-card">
+            <img src="./assets/images/our_work_1.png" alt="Portfolio 1" />
+            <p>Portofolio 1</p>
+          </div>
+          <div class="work-card">
+            <img src="./assets/images/our_work_2.png" alt="Portfolio 2" />
+            <p>Portofolio 2</p>
+          </div>
+          <div class="work-card">
+            <img src="./assets/images/our_work_3.png" alt="Portfolio 3" />
+            <p>Portofolio 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2 class="section-title">Meet the Team</h2>
+        <p class="section-subtitle">A group of future-ready tech makers.</p>
+        <div class="team-members">
+          <div class="team-grid">
+            <img
+              src="./assets/images/1_first_jasper_kim.png"
+              alt="Jasper Kim"
+            />
+            <h4>Jasper Kim</h4>
+            <p>Project Manager</p>
+          </div>
+          <div class="team-grid">
+            <img
+              src="./assets/images/2_alex_jonathan.png"
+              alt="Alex Jonathan"
+            />
+            <h4>Alex Jonathan</h4>
+            <p>Full-stack Developer</p>
+          </div>
+          <div class="team-grid">
+            <img src="./assets/images/3_mario_lopez.png" alt="Mario Lopez" />
+            <h4>Mario Lopez</h4>
+            <p>UI/UX Designer</p>
+          </div>
+          <div class="team-grid">
+            <img src="./assets/images/4_last_jasper_kim.png" alt="Jasper Kim" />
+            <h4>Jasper Kim</h4>
+            <p>Data Scientist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Let's Collaborate</h2>
+        <p class="section-subtitle">Need a tech team? We're ready to help</p>
+        <form class="contact-form">
+          <label for="name">Name : </label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email">Email : </label>
+          <input type="email" id="email" placeholder="Enter your email" />
+
+          <label for="message">Message : </label>
+          <textarea id="message" placeholder="Enter your message"></textarea>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Web Programming Hack. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

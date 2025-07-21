@@ -1,0 +1,3 @@
+# Ignore specific backup or example files
+index-dummy-example.html
+index_master_copy.css

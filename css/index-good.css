@@ -141,7 +141,7 @@ body {
   }
 
   .logo img {
-    width: 65px;
+    width: 36px;
     height: auto;
   }
 }
@@ -288,6 +288,12 @@ body {
   padding: 0 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
+/* tampilan desktop */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .service-card {
   width: 100%;
@@ -295,7 +301,6 @@ body {
   padding: 2rem 1.5rem;
   background-color: #111;
   border-radius: 12px;
-  border: 1px solid transparent;
   transition: all 0.3s ease;
 }
 .service-card:hover {
@@ -547,13 +552,6 @@ body {
     max-width: 350px;
     margin-right: 10dvh;
     transform: translateY(20px);
-  }
-}
-
-/* tampilan grid 3 column desktop */
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 

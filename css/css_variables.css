@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-text-light: #ccc;
+  --color-text-lighter: #aaa;
+  --color-text-subtle: #888;
+  --color-text-footer: #777;
+  --color-primary: #421abc;
+  --color-primary-hover: #5f46ab;
+  --color-card-bg: #111;
+  --color-card-border: #2d2d2d;
+  --color-hover-bg: #f5f5f5cd;
+  --color-gradient-overlay: #210a5e4d;
+
+  /* Font */
+  --font-main: 'Inter', sans-serif;
+  --font-size-xs: 0.9rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.1rem;
+  --font-size-lg: 1.75rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-title: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Radius */
+  --radius-pill: 999px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+
+  /* Transition */
+  --transition-fast: 0.3s ease;
+}

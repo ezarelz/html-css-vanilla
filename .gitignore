@@ -3,5 +3,5 @@ index-dummy-example.html
 
 # Folder
 node_modules/
-github/
+.github/
 css/index-good.css

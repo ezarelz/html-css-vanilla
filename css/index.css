@@ -166,12 +166,11 @@ body {
 
 .hero-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr auto; /* text kiri, gambar kanan */
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
-
   padding-block-start: 2rem;
 }
 
@@ -214,13 +213,17 @@ body {
   color: #ffffff;
 }
 
+.hero-image {
+  display: flex;
+  justify-content: flex-end; /* dorong ke kanan */
+}
+
 .hero-image img {
-  width: 100%;
   max-width: 400px;
-  object-fit: cover;
-  margin-right: 20dvh;
-  position: relative;
+  width: 100%;
+  object-fit: contain;
   transform: translateY(17px);
+  margin: 0;
 }
 
 /* === Responsive Tablet (≤ 1024px) === */
@@ -249,15 +252,15 @@ body {
 @media (max-width: 768px) {
   .hero {
     padding: 2rem 1rem 0;
-    margin-top: -5dvh;
+    margin-top: -0.8dvh;
   }
 
   .hero-content {
+    display: grid;
     grid-template-columns: 1fr;
-    flex-direction: column-reverse;
-    align-items: center;
+    gap: 0.05rem;
+    justify-items: center;
     text-align: center;
-    gap: 2rem;
   }
 
   .hero-text h2 {
@@ -268,13 +271,15 @@ body {
     font-size: 0.95rem;
   }
 
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
   .hero-image img {
     max-width: 220px;
-    transform: translateY(17px);
-  }
-  .btn-primary {
-    font-size: 0.95rem;
-    padding: 0.75rem 1.5rem;
+    transform: translateY(15px);
+    margin: 0 auto;
   }
 }
 

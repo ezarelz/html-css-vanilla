@@ -179,6 +179,7 @@ body {
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .hero-text h2 span {
@@ -225,12 +226,18 @@ body {
   transform: translateY(17px);
   margin: 0;
 }
+/* MEDIA QUERY UNTUK TABLET Landscape (768px–1024px) */
 
-/* === Responsive Tablet (≤ 1024px) === */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hero {
     padding: 3rem 1rem 0;
-    margin-top: -10dvh;
+    margin-top: -6dvh; /* jangan terlalu tinggi */
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-block-start: 1rem;
   }
 
   .hero-text h2 {
@@ -239,12 +246,23 @@ body {
 
   .hero-text p {
     font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-image {
+    justify-content: center;
   }
 
   .hero-image img {
-    max-width: 350px;
-    margin-right: 10dvh;
-    transform: translateY(17px);
+    max-width: 320px;
+    transform: translateY(10px);
+    margin: 0 auto;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    width: 16rem;
   }
 }
 
